@@ -101,13 +101,52 @@ Requirements for initial release. Each maps to roadmap phases.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| CONF-01 | Phase 1 | Pending |
+| CONF-02 | Phase 1 | Pending |
+| DISC-01 | Phase 2 | Pending |
+| DISC-02 | Phase 2 | Pending |
+| DISC-03 | Phase 2 | Pending |
+| DISC-04 | Phase 2 | Pending |
+| DISC-05 | Phase 2 | Pending |
+| PIPE-01 | Phase 2 | Pending |
+| REPT-01 | Phase 2 | Pending |
+| CDN-01 | Phase 3 | Pending |
+| CDN-02 | Phase 3 | Pending |
+| PORT-01 | Phase 3 | Pending |
+| PORT-02 | Phase 3 | Pending |
+| PORT-03 | Phase 3 | Pending |
+| HTTP-01 | Phase 4 | Pending |
+| HTTP-02 | Phase 4 | Pending |
+| HTTP-03 | Phase 4 | Pending |
+| HTTP-04 | Phase 4 | Pending |
+| CDN-03 | Phase 4 | Pending |
+| VULN-01 | Phase 5 | Pending |
+| VULN-02 | Phase 5 | Pending |
+| VULN-03 | Phase 5 | Pending |
+| TRCK-01 | Phase 6 | Pending |
+| TRCK-02 | Phase 6 | Pending |
+| TRCK-03 | Phase 6 | Pending |
+| TRCK-04 | Phase 6 | Pending |
+| REPT-03 | Phase 6 | Pending |
+| PIPE-02 | Phase 7 | Pending |
+| PIPE-03 | Phase 7 | Pending |
+| PIPE-04 | Phase 7 | Pending |
+| PIPE-05 | Phase 7 | Pending |
+| PIPE-06 | Phase 7 | Pending |
+| PIPE-07 | Phase 7 | Pending |
+| REPT-02 | Phase 7 | Pending |
+| REPT-04 | Phase 7 | Pending |
+| CONF-03 | Phase 7 | Pending |
+| CONF-04 | Phase 7 | Pending |
+| CONF-05 | Phase 7 | Pending |
 
 **Coverage:**
 - v1 requirements: 30 total
-- Mapped to phases: 0
-- Unmapped: 30
+- Mapped to phases: 30
+- Unmapped: 0
+
+**Coverage verification:** ✓ All 30 v1 requirements mapped to phases
 
 ---
 *Requirements defined: 2026-02-14*
-*Last updated: 2026-02-14 after initial definition*
+*Last updated: 2026-02-14 after roadmap creation*
