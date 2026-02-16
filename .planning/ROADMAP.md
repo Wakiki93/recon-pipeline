@@ -56,11 +56,11 @@ Plans:
   4. Unresolved subdomains are flagged separately as dangling DNS candidates
   5. Pipeline produces a subdomains.md markdown report listing all findings
 
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 02-01: TBD during plan-phase
-- [ ] 02-02: TBD during plan-phase
+- [ ] 02-01-PLAN.md — Tool wrappers (subfinder/tlsx/dig), discovery pipeline, deduplication, DNS resolution
+- [ ] 02-02-PLAN.md — Markdown report generator and discover CLI command
 
 ### Phase 3: CDN Detection & Port Scanning
 **Goal**: Filter CDN-hosted IPs before port scanning and fingerprint open ports on remaining targets
@@ -183,7 +183,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Configuration | 3/3 | ✓ Complete | 2026-02-16 |
-| 2. Subdomain Discovery | 0/2 | Not started | - |
+| 2. Subdomain Discovery | 0/2 | In progress | - |
 | 3. CDN Detection & Port Scanning | 0/3 | Not started | - |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
 | 5. Vulnerability Scanning | 0/2 | Not started | - |
