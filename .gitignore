@@ -1,0 +1,38 @@
+# Binaries (root level only)
+/reconpipe
+/reconpipe.exe
+
+# Other binaries
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Output
+vendor/
+*.db
+reconpipe.db
+scans/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated configs (user-specific)
+reconpipe.yaml
