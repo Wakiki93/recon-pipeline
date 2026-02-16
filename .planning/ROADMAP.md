@@ -35,12 +35,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Scan results are saved to structured directories (scans/domain_timestamp/)
   4. Basic scan metadata (target, start time, tool versions) persists to bbolt database
 
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 01-01: TBD during plan-phase
-- [ ] 01-02: TBD during plan-phase
-- [ ] 01-03: TBD during plan-phase
+- [ ] 01-01-PLAN.md — Go module init, data models, YAML config loading
+- [ ] 01-02-PLAN.md — bbolt storage layer and scan directory structure
+- [ ] 01-03-PLAN.md — Cobra CLI with check and init commands
 
 ### Phase 2: Subdomain Discovery
 **Goal**: Deliver working subdomain enumeration pipeline with deduplication and DNS resolution
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Configuration | 0/3 | Not started | - |
+| 1. Foundation & Configuration | 0/3 | Planned | - |
 | 2. Subdomain Discovery | 0/2 | Not started | - |
 | 3. CDN Detection & Port Scanning | 0/3 | Not started | - |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
@@ -192,4 +192,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-14*
+*Last updated: 2026-02-16*
