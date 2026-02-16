@@ -12,7 +12,7 @@ ReconPipe transforms from a basic Go CLI foundation into a full-featured reconna
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Configuration** - Data models, storage, config loading
+- [x] **Phase 1: Foundation & Configuration** - Data models, storage, config loading *(completed 2026-02-16)*
 - [ ] **Phase 2: Subdomain Discovery** - subfinder + tlsx + dig + deduplication
 - [ ] **Phase 3: CDN Detection & Port Scanning** - cdncheck pre-filtering + masscan + nmap
 - [ ] **Phase 4: HTTP Probing & Screenshots** - httpx vhost detection + gowitness
@@ -38,9 +38,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Go module init, data models, YAML config loading
-- [ ] 01-02-PLAN.md — bbolt storage layer and scan directory structure
-- [ ] 01-03-PLAN.md — Cobra CLI with check and init commands
+- [x] 01-01-PLAN.md — Go module init, data models, YAML config loading
+- [x] 01-02-PLAN.md — bbolt storage layer and scan directory structure
+- [x] 01-03-PLAN.md — Cobra CLI with check and init commands
 
 ### Phase 2: Subdomain Discovery
 **Goal**: Deliver working subdomain enumeration pipeline with deduplication and DNS resolution
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Configuration | 0/3 | Planned | - |
+| 1. Foundation & Configuration | 3/3 | ✓ Complete | 2026-02-16 |
 | 2. Subdomain Discovery | 0/2 | Not started | - |
 | 3. CDN Detection & Port Scanning | 0/3 | Not started | - |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
