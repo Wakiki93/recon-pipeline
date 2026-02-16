@@ -1,0 +1,104 @@
+# ReconPipe Configuration
+# This file contains default settings for the reconnaissance pipeline.
+# All paths are relative to the working directory unless specified as absolute.
+
+# Directory where scan results are stored
+scan_dir: scans
+
+# Path to the SQLite database file
+db_path: reconpipe.db
+
+# External tool configurations
+tools:
+  # Subfinder - subdomain enumeration
+  subfinder:
+    path: subfinder
+    args:
+      - -silent
+    timeout: 5m
+
+  # tlsx - TLS/SSL data extraction
+  tlsx:
+    path: tlsx
+    args:
+      - -silent
+    timeout: 5m
+
+  # dig - DNS lookup utility
+  dig:
+    path: dig
+    args:
+      - +short
+    timeout: 5m
+
+  # Masscan - fast port scanner
+  masscan:
+    path: masscan
+    args:
+      - -p1-65535
+      - --rate=1000
+    timeout: 5m
+
+  # Nmap - network mapper for service detection
+  nmap:
+    path: nmap
+    args:
+      - -sV
+      - -Pn
+    timeout: 5m
+
+  # httpx - HTTP toolkit for probing
+  httpx:
+    path: httpx
+    args:
+      - -silent
+    timeout: 5m
+
+  # Gowitness - web screenshot utility
+  gowitness:
+    path: gowitness
+    args:
+      - single
+    timeout: 5m
+
+  # cdncheck - CDN detection tool
+  cdncheck:
+    path: cdncheck
+    args:
+      - -silent
+    timeout: 5m
+
+  # Nuclei - vulnerability scanner
+  nuclei:
+    path: nuclei
+    args:
+      - -silent
+    timeout: 5m
+
+# Rate limiting settings to control scan speed and avoid overwhelming targets
+rate_limits:
+  # Number of concurrent threads for subfinder
+  subfinder_threads: 10
+
+  # Masscan packet rate (packets per second)
+  masscan_rate: 1000
+
+  # Maximum parallel Nmap scans
+  nmap_max_parallel: 5
+
+  # Number of concurrent threads for httpx
+  httpx_threads: 25
+
+  # Number of concurrent threads for nuclei
+  nuclei_threads: 10
+
+  # Nuclei rate limit (requests per second)
+  nuclei_rate_limit: 150
+
+# Pipeline stage control
+stages:
+  # Stages to explicitly enable (empty = all enabled)
+  enable: []
+
+  # Stages to skip (e.g., ["screenshots", "vulnerabilities"] for faster recon)
+  skip: []
