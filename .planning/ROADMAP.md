@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Configuration** - Data models, storage, config loading *(completed 2026-02-16)*
 - [x] **Phase 2: Subdomain Discovery** - subfinder + tlsx + dig + deduplication *(completed 2026-02-17)*
-- [ ] **Phase 3: CDN Detection & Port Scanning** - cdncheck pre-filtering + masscan + nmap
+- [x] **Phase 3: CDN Detection & Port Scanning** - cdncheck pre-filtering + masscan + nmap *(completed 2026-02-17)*
 - [ ] **Phase 4: HTTP Probing & Screenshots** - httpx vhost detection + gowitness
 - [ ] **Phase 5: Vulnerability Scanning** - nuclei integration with severity filtering
 - [ ] **Phase 6: Scan Tracking & Diff Mode** - Historical comparison + dangling DNS tracking
@@ -80,8 +80,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Tool wrappers for cdncheck, masscan, and nmap
-- [ ] 03-02-PLAN.md — CDN filtering pipeline, port scan orchestration, report, and CLI command
+- [x] 03-01-PLAN.md — Tool wrappers for cdncheck, masscan, and nmap
+- [x] 03-02-PLAN.md — CDN filtering pipeline, port scan orchestration, report, and CLI command
 
 ### Phase 4: HTTP Probing & Screenshots
 **Goal**: Detect live HTTP services with vhost awareness and capture screenshots for visual triage
@@ -183,7 +183,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 |-------|----------------|--------|-----------|
 | 1. Foundation & Configuration | 3/3 | Complete | 2026-02-16 |
 | 2. Subdomain Discovery | 2/2 | Complete | 2026-02-17 |
-| 3. CDN Detection & Port Scanning | 0/2 | Not started | - |
+| 3. CDN Detection & Port Scanning | 2/2 | Complete | 2026-02-17 |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
 | 5. Vulnerability Scanning | 0/2 | Not started | - |
 | 6. Scan Tracking & Diff Mode | 0/3 | Not started | - |

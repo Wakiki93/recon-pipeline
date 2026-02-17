@@ -6,16 +6,16 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** Reliable subdomain-to-vulnerability pipeline that tracks dangling DNS records across scans and diffs results over time — so nothing falls through the cracks between engagements.
 
-**Current focus:** Phase 3 - CDN Detection & Port Scanning
+**Current focus:** Phase 4 - HTTP Probing & Screenshots
 
 ## Current Position
 
-Phase: 3 of 7 (CDN Detection & Port Scanning)
-Plan: 2 of 2 in current phase
-Status: Complete
-Last activity: 2026-02-17 — Completed Phase 03 Plan 02 (CDN filtering and port scanning pipeline)
+Phase: 4 of 7 (HTTP Probing & Screenshots)
+Plan: 0 of 2 in current phase
+Status: Starting
+Last activity: 2026-02-17 — Phase 3 verified (6/6 must-haves, PASSED), ROADMAP updated
 
-Progress: [█████░░░░░] 41%
+Progress: [█████░░░░░] 43%
 
 ## Performance Metrics
 
