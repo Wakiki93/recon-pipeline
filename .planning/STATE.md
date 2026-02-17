@@ -6,16 +6,16 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** Reliable subdomain-to-vulnerability pipeline that tracks dangling DNS records across scans and diffs results over time — so nothing falls through the cracks between engagements.
 
-**Current focus:** Phase 2 - Subdomain Discovery
+**Current focus:** Phase 3 - CDN Detection & Port Scanning
 
 ## Current Position
 
-Phase: 2 of 7 (Subdomain Discovery)
-Plan: 2 of 2 in current phase
-Status: Complete
-Last activity: 2026-02-17 — Completed quick task 1: fix dns.go/markdown.go data model mismatch
+Phase: 3 of 7 (CDN Detection & Port Scanning)
+Plan: 0 of 2 in current phase
+Status: Starting
+Last activity: 2026-02-17 — Phase 2 verified (10/10 truths, gap closed), ROADMAP updated
 
-Progress: [███░░░░░░░] 24%
+Progress: [███░░░░░░░] 29%
 
 ## Performance Metrics
 

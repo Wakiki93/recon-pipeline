@@ -13,7 +13,7 @@ ReconPipe transforms from a basic Go CLI foundation into a full-featured reconna
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Configuration** - Data models, storage, config loading *(completed 2026-02-16)*
-- [ ] **Phase 2: Subdomain Discovery** - subfinder + tlsx + dig + deduplication
+- [x] **Phase 2: Subdomain Discovery** - subfinder + tlsx + dig + deduplication *(completed 2026-02-17)*
 - [ ] **Phase 3: CDN Detection & Port Scanning** - cdncheck pre-filtering + masscan + nmap
 - [ ] **Phase 4: HTTP Probing & Screenshots** - httpx vhost detection + gowitness
 - [ ] **Phase 5: Vulnerability Scanning** - nuclei integration with severity filtering
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Configuration | 3/3 | Complete | 2026-02-16 |
-| 2. Subdomain Discovery | 0/2 | In progress | - |
+| 2. Subdomain Discovery | 2/2 | Complete | 2026-02-17 |
 | 3. CDN Detection & Port Scanning | 0/2 | Not started | - |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
 | 5. Vulnerability Scanning | 0/2 | Not started | - |
