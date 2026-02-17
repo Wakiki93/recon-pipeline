@@ -3,6 +3,7 @@ package discovery
 import (
 	"context"
 	"fmt"
+	"strings"
 
 	"github.com/hakim/reconpipe/internal/models"
 	"github.com/hakim/reconpipe/internal/tools"
@@ -31,6 +32,20 @@ func ResolveBatch(ctx context.Context, subdomains []models.Subdomain, digPath st
 			// Subdomain resolves - mark as resolved and store IPs
 			subdomains[i].Resolved = true
 			subdomains[i].IPs = dnsResult.IPs
+
+			// Populate DNSRecords with A/AAAA records for report generation
+			// (markdown.go checks DNSRecords to identify resolved subdomains)
+			for _, ip := range dnsResult.IPs {
+				recordType := models.DNSRecordA
+				if strings.Contains(ip, ":") {
+					// IPv6 addresses contain colons
+					recordType = models.DNSRecordAAAA
+				}
+				subdomains[i].DNSRecords = append(subdomains[i].DNSRecords, models.DNSRecord{
+					Type:  recordType,
+					Value: ip,
+				})
+			}
 		} else {
 			// Subdomain does not resolve - check for CNAME (dangling DNS candidate)
 			cname, err := tools.CheckCNAME(ctx, subdomains[i].Name, digPath)
