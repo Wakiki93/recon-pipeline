@@ -2,7 +2,7 @@
 
 ## Overview
 
-ReconPipe transforms from a basic Go CLI foundation into a full-featured reconnaissance orchestrator across 7 phases. The journey begins with data storage and configuration infrastructure, builds through progressive tool integration (subdomains → CDN filtering → port scanning → HTTP probing → vulnerability detection), adds competitive differentiators (scan diffing and dangling DNS tracking), and culminates with production-ready pipeline orchestration featuring wizard mode, resume capability, and safety features. Each phase delivers verifiable capabilities that compound into a reliable subdomain-to-vulnerability pipeline.
+ReconPipe transforms from a basic Go CLI foundation into a full-featured reconnaissance orchestrator across 7 phases. The journey begins with data storage and configuration infrastructure, builds through progressive tool integration (subdomains -> CDN filtering -> port scanning -> HTTP probing -> vulnerability detection), adds competitive differentiators (scan diffing and dangling DNS tracking), and culminates with production-ready pipeline orchestration featuring wizard mode, resume capability, and safety features. Each phase delivers verifiable capabilities that compound into a reliable subdomain-to-vulnerability pipeline.
 
 ## Phases
 
@@ -77,12 +77,11 @@ Plans:
   5. Port scan results associate both IPs and their corresponding subdomains
   6. Pipeline produces a ports.md report showing open ports per host
 
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 03-01: TBD during plan-phase
-- [ ] 03-02: TBD during plan-phase
-- [ ] 03-03: TBD during plan-phase
+- [ ] 03-01-PLAN.md — Tool wrappers for cdncheck, masscan, and nmap
+- [ ] 03-02-PLAN.md — CDN filtering pipeline, port scan orchestration, report, and CLI command
 
 ### Phase 4: HTTP Probing & Screenshots
 **Goal**: Detect live HTTP services with vhost awareness and capture screenshots for visual triage
@@ -178,13 +177,13 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Configuration | 3/3 | ✓ Complete | 2026-02-16 |
+| 1. Foundation & Configuration | 3/3 | Complete | 2026-02-16 |
 | 2. Subdomain Discovery | 0/2 | In progress | - |
-| 3. CDN Detection & Port Scanning | 0/3 | Not started | - |
+| 3. CDN Detection & Port Scanning | 0/2 | Not started | - |
 | 4. HTTP Probing & Screenshots | 0/2 | Not started | - |
 | 5. Vulnerability Scanning | 0/2 | Not started | - |
 | 6. Scan Tracking & Diff Mode | 0/3 | Not started | - |
@@ -192,4 +191,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 ---
 *Roadmap created: 2026-02-14*
-*Last updated: 2026-02-16*
+*Last updated: 2026-02-17*
