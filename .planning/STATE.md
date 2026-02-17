@@ -13,7 +13,7 @@ See: .planning/PROJECT.md (updated 2026-02-14)
 Phase: 2 of 7 (Subdomain Discovery)
 Plan: 2 of 2 in current phase
 Status: Complete
-Last activity: 2026-02-16 — Phase 2 Complete (Subdomain Discovery with CLI + Reports)
+Last activity: 2026-02-17 — Completed quick task 1: fix dns.go/markdown.go data model mismatch
 
 Progress: [███░░░░░░░] 24%
 
@@ -74,6 +74,12 @@ None yet.
 ### Blockers/Concerns
 
 None yet.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 1 | fix the dns.go and markdown.go data model mismatch | 2026-02-17 | 3990109 | [1-fix-the-dns-go-and-markdown-go-data-mode](./quick/1-fix-the-dns-go-and-markdown-go-data-mode/) |
 
 ## Session Continuity
 
