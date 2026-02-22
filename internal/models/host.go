@@ -60,4 +60,7 @@ type HTTPProbe struct {
 	IP             string   `json:"ip"`
 	Port           int      `json:"port"`
 	ScreenshotPath string   `json:"screenshot_path,omitempty"`
+	IsCDN          bool     `json:"is_cdn"`
+	CDNProvider    string   `json:"cdn_provider,omitempty"`
+	WebServer      string   `json:"webserver,omitempty"`
 }
