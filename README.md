@@ -85,12 +85,19 @@ go build -o reconpipe.exe ./cmd/reconpipe
 ./reconpipe check
 ```
 
-**3. Run your first scan:**
+**3. Run your first scan — two ways:**
+
+The easy way (guided wizard):
+```bash
+./reconpipe wizard
+```
+
+Or directly with flags:
 ```bash
 ./reconpipe scan -d example.com --preset quick-recon
 ```
 
-That's it. Results land in `scans/example.com_<timestamp>/`.
+Results land in `scans/example.com_<timestamp>/`.
 
 ---
 
@@ -113,6 +120,46 @@ Presets are the easiest way to control what gets run.
 ---
 
 ## Commands
+
+### `wizard` — Interactive guided scan
+
+```bash
+./reconpipe wizard
+```
+
+Walks you through everything step by step — no flags needed. Great for first-time use or when you want to double-check your settings before launching.
+
+```
+[*] ReconPipe Interactive Wizard
+[*] Press Enter to accept the default shown in brackets.
+
+[?] Target domain (required): example.com
+
+    Presets:
+      [1] quick-recon      — fast surface mapping (discover + portscan)
+      [2] bug-bounty        — full pipeline, critical/high/medium findings
+      [3] internal-pentest  — full pipeline, all severity levels
+      [4] custom            — choose stages manually
+[?] Choose preset [1]: 2
+
+    Severity options: critical, high, medium, low, info
+[?] Severity filter [critical,high,medium]:
+
+[?] Timeout (Go duration, e.g. 30m, 1h, 2h) [2h]:
+
+[?] Webhook URL (optional, press Enter to skip):
+
+[*] Ready to scan:
+    Target:   example.com
+    Preset:   bug-bounty
+    Severity: critical,high,medium
+    Timeout:  2h0m0s
+    Webhook:  (none)
+
+Start scan? [Y/n]:
+```
+
+---
 
 ### `scan` — Run the full pipeline
 
