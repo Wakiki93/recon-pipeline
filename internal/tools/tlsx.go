@@ -27,15 +27,16 @@ func RunTlsx(ctx context.Context, domain string, binaryPath string) ([]string, e
 		binary = binaryPath
 	}
 
-	// Build arguments: -san -cn -silent -json
+	// Build arguments: -host domain -san -cn -silent -json
 	args := []string{
+		"-host", domain,
 		"-san",    // Extract Subject Alternative Names
 		"-cn",     // Extract Common Name
 		"-silent", // Quiet output
 		"-json",   // JSON output format
 	}
 
-	// Execute via RunTool with domain piped to stdin
+	// Execute via RunTool
 	result, err := RunTool(ctx, binary, args...)
 	if err != nil {
 		return nil, fmt.Errorf("tlsx execution failed: %w", err)
